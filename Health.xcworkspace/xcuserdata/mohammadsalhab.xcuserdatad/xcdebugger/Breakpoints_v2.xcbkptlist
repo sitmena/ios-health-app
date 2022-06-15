@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4C79C437-FF23-4F21-900C-ED53BA929805"
+            uuid = "5CED790B-B9A2-4170-9126-2FDAC82B3EB4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Health/Application/SceneDelegate.swift"
+            filePath = "Health/Data/Utils/HealthKitSetupAssistant.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "authorizeHealthKit(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
