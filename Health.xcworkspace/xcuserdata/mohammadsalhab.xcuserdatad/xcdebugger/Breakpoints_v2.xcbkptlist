@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5CED790B-B9A2-4170-9126-2FDAC82B3EB4"
+            uuid = "4663ED82-7948-40DB-9093-2F668456AA1F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Health/Data/Utils/HealthKitSetupAssistant.swift"
+            filePath = "Health/Domain/UseCases/FetchHealthInfoUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "authorizeHealthKit(completion:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "loadEnergyBurned(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

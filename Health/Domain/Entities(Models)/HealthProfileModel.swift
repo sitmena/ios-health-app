@@ -14,8 +14,8 @@ struct HealthProfileModel {
     var bloodType: HKBloodType?
     var heightInMeters: Double?
     var weightInKilograms: Double?
-    var stepsCount: Double?
-    var energyBurned: Double?
+    var stepsCount: Int?
+    var energyBurned: Int?
     
     var bodyMassIndex: Double? {
         guard

@@ -16,18 +16,11 @@ class ProfileDataStore {
         
         let now = Date()
         let startOfDay = Calendar.current.startOfDay(for: now)
-//        let testTime = Calendar.current.date
         let predicate = HKQuery.predicateForSamples(
             withStart: startOfDay,
             end: now,
             options: .strictStartDate
         )
-        
-//        let predicateA = HKQuery.predicateForSamples(
-//            withStart: ,
-//            end: now,
-//            options: .strictStartDate
-//        )
         
         let query = HKStatisticsQuery(
             quantityType: stepsQuantityType,
@@ -44,4 +37,34 @@ class ProfileDataStore {
         
         healthStore.execute(query)
     }
+    
+    class func getEnergyBurned(completion: @escaping (Double) -> Void) {
+        let healthStore = HKHealthStore()
+        let energyQuantityType = HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!
+        
+        let now = Date()
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let predicate = HKQuery.predicateForSamples(
+            withStart: startOfDay,
+            end: now,
+            options: .strictStartDate
+        )
+
+        
+        let query = HKStatisticsQuery(
+            quantityType: energyQuantityType,
+            quantitySamplePredicate: predicate,
+            options: .cumulativeSum
+        ) { _, result, error in
+            guard let result = result, let sum = result.sumQuantity() else {
+                print(error)
+                completion(0.0)
+                return
+            }
+            completion(sum.doubleValue(for: HKUnit.kilocalorie()))
+        }
+        
+        healthStore.execute(query)
+    }
+    
 }

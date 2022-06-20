@@ -22,6 +22,9 @@
         <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
         </array>
+        <array key="Montserrat-VariableFont_wght.ttf">
+            <string>MontserratRoman-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Home View Controller-->
@@ -101,31 +104,57 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSp-Wn-v51">
-                                                <rect key="frame" x="57" y="429" width="300" height="60"/>
+                                                <rect key="frame" x="40" y="429" width="334" height="60"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icStart" translatesAutoresizingMaskIntoConstraints="NO" id="4UX-zh-PhQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="12" height="20"/>
                                                     </imageView>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" progressImage="icFinish" trackImage="icStart" translatesAutoresizingMaskIntoConstraints="NO" id="rOT-15-Spb">
-                                                        <rect key="frame" x="0.0" y="28" width="300" height="4"/>
+                                                        <rect key="frame" x="0.0" y="28" width="334" height="4"/>
                                                         <color key="progressTintColor" name="progressBarFillColor"/>
                                                         <color key="trackTintColor" name="ProgressBarTintColor"/>
                                                     </progressView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icFinish" translatesAutoresizingMaskIntoConstraints="NO" id="OYw-f5-cKa">
-                                                        <rect key="frame" x="282" y="0.0" width="18" height="16"/>
+                                                        <rect key="frame" x="316" y="0.0" width="18" height="16"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-uO-HrZ" userLabel="startCountLabel">
-                                                        <rect key="frame" x="0.0" y="45.333333333333371" width="16.333333333333332" height="14.666666666666664"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-uO-HrZ" userLabel="startCountLabel">
+                                                        <rect key="frame" x="0.0" y="45.333333333333371" width="8.3333333333333339" height="14.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3u-gI-rKS" userLabel="startCountLabel">
-                                                        <rect key="frame" x="263.33333333333331" y="45.333333333333371" width="36.666666666666686" height="14.666666666666664"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3u-gI-rKS" userLabel="startCountLabel">
+                                                        <rect key="frame" x="305.33333333333331" y="45.333333333333371" width="28.666666666666686" height="14.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpa-97-8gR">
+                                                        <rect key="frame" x="30" y="-20" width="30" height="40"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icNow" translatesAutoresizingMaskIntoConstraints="NO" id="MR4-Lw-oFQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNA-YW-BD2">
+                                                                <rect key="frame" x="6.6666666666666714" y="2.0000000000000009" width="17" height="12.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="MR4-Lw-oFQ" firstAttribute="leading" secondItem="lpa-97-8gR" secondAttribute="leading" id="1V3-bu-o84"/>
+                                                            <constraint firstItem="fNA-YW-BD2" firstAttribute="top" secondItem="lpa-97-8gR" secondAttribute="top" constant="2" id="5VK-sE-c91"/>
+                                                            <constraint firstAttribute="trailing" secondItem="MR4-Lw-oFQ" secondAttribute="trailing" id="5wb-2c-sOZ"/>
+                                                            <constraint firstItem="MR4-Lw-oFQ" firstAttribute="top" secondItem="lpa-97-8gR" secondAttribute="top" id="6zD-Ds-HT6"/>
+                                                            <constraint firstAttribute="height" constant="40" id="Ps3-Dt-ipA"/>
+                                                            <constraint firstAttribute="width" constant="30" id="SIJ-RV-9TT"/>
+                                                            <constraint firstItem="fNA-YW-BD2" firstAttribute="centerX" secondItem="lpa-97-8gR" secondAttribute="centerX" id="WUR-SQ-dZf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="MR4-Lw-oFQ" secondAttribute="bottom" id="kwT-9U-oqX"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -135,12 +164,14 @@
                                                     <constraint firstAttribute="bottom" secondItem="n3u-gI-rKS" secondAttribute="bottom" id="AkV-OB-znh"/>
                                                     <constraint firstAttribute="trailing" secondItem="n3u-gI-rKS" secondAttribute="trailing" id="HUs-aS-aDn"/>
                                                     <constraint firstItem="n3u-gI-rKS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VOa-uO-HrZ" secondAttribute="trailing" constant="8" symbolic="YES" id="I17-9g-Mj2"/>
+                                                    <constraint firstItem="lpa-97-8gR" firstAttribute="leading" secondItem="4UX-zh-PhQ" secondAttribute="trailing" constant="18" id="JD8-i4-KH0"/>
                                                     <constraint firstAttribute="bottom" secondItem="VOa-uO-HrZ" secondAttribute="bottom" id="Kxo-PG-RRW"/>
                                                     <constraint firstAttribute="trailing" secondItem="rOT-15-Spb" secondAttribute="trailing" id="Ovy-dc-e5k"/>
                                                     <constraint firstItem="rOT-15-Spb" firstAttribute="centerY" secondItem="xSp-Wn-v51" secondAttribute="centerY" id="ddR-Wp-h6F"/>
                                                     <constraint firstItem="VOa-uO-HrZ" firstAttribute="leading" secondItem="xSp-Wn-v51" secondAttribute="leading" id="lto-wj-KxV"/>
                                                     <constraint firstItem="OYw-f5-cKa" firstAttribute="top" secondItem="xSp-Wn-v51" secondAttribute="top" id="oDd-o3-a1w"/>
                                                     <constraint firstItem="4UX-zh-PhQ" firstAttribute="leading" secondItem="xSp-Wn-v51" secondAttribute="leading" id="qhq-LN-uUg"/>
+                                                    <constraint firstItem="lpa-97-8gR" firstAttribute="bottom" secondItem="4UX-zh-PhQ" secondAttribute="bottom" id="ueD-iU-F38"/>
                                                     <constraint firstAttribute="trailing" secondItem="OYw-f5-cKa" secondAttribute="trailing" id="zTO-Cv-mG9"/>
                                                 </constraints>
                                             </view>
@@ -273,7 +304,7 @@
                                         <constraints>
                                             <constraint firstItem="sNO-eE-Bbv" firstAttribute="leading" secondItem="hch-1I-qlb" secondAttribute="leading" constant="20" symbolic="YES" id="4ed-zT-W8T"/>
                                             <constraint firstAttribute="trailing" secondItem="1DC-tJ-w0I" secondAttribute="trailing" constant="40" id="5uX-6g-9pD"/>
-                                            <constraint firstItem="xSp-Wn-v51" firstAttribute="leading" secondItem="hch-1I-qlb" secondAttribute="leading" constant="57" id="Gmr-1I-yBS"/>
+                                            <constraint firstItem="xSp-Wn-v51" firstAttribute="leading" secondItem="hch-1I-qlb" secondAttribute="leading" constant="40" id="Gmr-1I-yBS"/>
                                             <constraint firstItem="XRE-iG-tzP" firstAttribute="top" secondItem="e26-MQ-y6X" secondAttribute="bottom" constant="22" id="HOf-ge-kDC"/>
                                             <constraint firstItem="sNO-eE-Bbv" firstAttribute="top" secondItem="hch-1I-qlb" secondAttribute="top" constant="20" id="Icn-q9-FcE"/>
                                             <constraint firstItem="e26-MQ-y6X" firstAttribute="centerX" secondItem="hch-1I-qlb" secondAttribute="centerX" id="JE8-yA-F4S"/>
@@ -282,7 +313,7 @@
                                             <constraint firstItem="1DC-tJ-w0I" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XRE-iG-tzP" secondAttribute="bottom" constant="30" id="TKx-Nv-iIX"/>
                                             <constraint firstAttribute="trailing" secondItem="XRE-iG-tzP" secondAttribute="trailing" constant="40" id="TuH-Ja-caF"/>
                                             <constraint firstItem="wFc-jm-5e5" firstAttribute="top" secondItem="sNO-eE-Bbv" secondAttribute="bottom" constant="30" id="cq9-hR-Fty"/>
-                                            <constraint firstAttribute="trailing" secondItem="xSp-Wn-v51" secondAttribute="trailing" constant="57" id="dBe-kc-YXj"/>
+                                            <constraint firstAttribute="trailing" secondItem="xSp-Wn-v51" secondAttribute="trailing" constant="40" id="dBe-kc-YXj"/>
                                             <constraint firstAttribute="height" constant="764" id="dRa-Y9-xjT"/>
                                             <constraint firstItem="e26-MQ-y6X" firstAttribute="top" secondItem="xSp-Wn-v51" secondAttribute="bottom" constant="30" id="dnn-0R-9fk"/>
                                             <constraint firstItem="XRE-iG-tzP" firstAttribute="leading" secondItem="hch-1I-qlb" secondAttribute="leading" constant="40" id="fKa-BE-iMu"/>
@@ -313,6 +344,14 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="808"/>
+                    <connections>
+                        <outlet property="caloriesBurnedLabel" destination="eE5-as-663" id="Ke2-hM-ZkP"/>
+                        <outlet property="currentValueLabel" destination="fNA-YW-BD2" id="WwP-32-VGQ"/>
+                        <outlet property="currentValueView" destination="lpa-97-8gR" id="ShI-3G-BcA"/>
+                        <outlet property="stepsCountLabel" destination="g09-vi-9xe" id="hoN-4B-Gfs"/>
+                        <outlet property="stepsProgressView" destination="rOT-15-Spb" id="y91-xp-gWQ"/>
+                        <outlet property="totalPointsBalanceLabel" destination="XYe-hW-LBJ" id="oi5-HE-mSE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,6 +360,7 @@
     </scenes>
     <resources>
         <image name="icFinish" width="18" height="16"/>
+        <image name="icNow" width="28" height="40"/>
         <image name="icStart" width="12" height="20"/>
         <image name="imgCircles" width="248" height="250"/>
         <namedColor name="ProgressBarTintColor">

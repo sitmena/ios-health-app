@@ -12,7 +12,10 @@
 		AE4F2F6D2852233A00118B8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F2F6C2852233A00118B8C /* HomeViewController.swift */; };
 		AE56D5CE284F2F9B00BE4519 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE56D5CD284F2F9B00BE4519 /* UIView+extension.swift */; };
 		AE56D5DB285214C200BE4519 /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE56D5DA285214C200BE4519 /* APIEndPoints.swift */; };
+		AE71961D285F4C7900796A64 /* HealthBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71961C285F4C7900796A64 /* HealthBarViewModel.swift */; };
 		AE87AA612859DCC4004EB8A1 /* HealthProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87AA602859DCC4004EB8A1 /* HealthProfileModel.swift */; };
+		AE87AA632859E635004EB8A1 /* FetchHealthInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87AA622859E635004EB8A1 /* FetchHealthInfoUseCase.swift */; };
+		AE87AA66285B33C5004EB8A1 /* HealthProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87AA65285B33C5004EB8A1 /* HealthProfileViewModel.swift */; };
 		AEA63093284641EB00798C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA63092284641EB00798C90 /* AppDelegate.swift */; };
 		AEA63095284641EB00798C90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA63094284641EB00798C90 /* SceneDelegate.swift */; };
 		AEB165202852304E00A0E4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA6309B284641EC00798C90 /* Assets.xcassets */; };
@@ -74,7 +77,10 @@
 		AE71525E2848BEEB0014CC06 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		AE71525F2848BEEB0014CC06 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		AE7152602848BEEB0014CC06 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		AE71961C285F4C7900796A64 /* HealthBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBarViewModel.swift; sourceTree = "<group>"; };
 		AE87AA602859DCC4004EB8A1 /* HealthProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfileModel.swift; sourceTree = "<group>"; };
+		AE87AA622859E635004EB8A1 /* FetchHealthInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchHealthInfoUseCase.swift; sourceTree = "<group>"; };
+		AE87AA65285B33C5004EB8A1 /* HealthProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfileViewModel.swift; sourceTree = "<group>"; };
 		AEA6308F284641EB00798C90 /* Health.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Health.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA63092284641EB00798C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA63094284641EB00798C90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +167,8 @@
 		AE56D5D42852091F00BE4519 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AE87AA65285B33C5004EB8A1 /* HealthProfileViewModel.swift */,
+				AE71961C285F4C7900796A64 /* HealthBarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 		AE56D5D728520C8E00BE4519 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				AE87AA622859E635004EB8A1 /* FetchHealthInfoUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -421,8 +430,11 @@
 				AE87AA612859DCC4004EB8A1 /* HealthProfileModel.swift in Sources */,
 				AE56D5CE284F2F9B00BE4519 /* UIView+extension.swift in Sources */,
 				AE56D5DB285214C200BE4519 /* APIEndPoints.swift in Sources */,
+				AE87AA66285B33C5004EB8A1 /* HealthProfileViewModel.swift in Sources */,
 				AEF8B35728561D38006D426C /* HealthKitSetupAssistant.swift in Sources */,
 				AEF8B35C28572AD6006D426C /* HealthDataStore.swift in Sources */,
+				AE71961D285F4C7900796A64 /* HealthBarViewModel.swift in Sources */,
+				AE87AA632859E635004EB8A1 /* FetchHealthInfoUseCase.swift in Sources */,
 				AEA63095284641EB00798C90 /* SceneDelegate.swift in Sources */,
 				AE4F2F6D2852233A00118B8C /* HomeViewController.swift in Sources */,
 			);
