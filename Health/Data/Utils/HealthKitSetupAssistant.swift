@@ -37,9 +37,6 @@ class HealthKitSetupAssistant {
         }
         
         //3. Prepare a list of types you want HealthKit to read and write
-//        let healthKitTypesToWrite: Set<HKSampleType> = [bodyMassIndex,
-//                                                        activeEnergy,
-//                                                        HKObjectType.workoutType()]
         let healthKitTypesToRead: Set<HKObjectType> = [dateOfBirth,
                                                        bloodType,
                                                        biologicalSex,

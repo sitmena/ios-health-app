@@ -12,6 +12,9 @@
 		AE4F2F6D2852233A00118B8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F2F6C2852233A00118B8C /* HomeViewController.swift */; };
 		AE56D5CE284F2F9B00BE4519 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE56D5CD284F2F9B00BE4519 /* UIView+extension.swift */; };
 		AE56D5DB285214C200BE4519 /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE56D5DA285214C200BE4519 /* APIEndPoints.swift */; };
+		AE6D3CFE286B0B7000D369F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6D3CFD286B0B7000D369F7 /* LaunchScreen.storyboard */; };
+		AE6D3D00286B0E9700D369F7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3CFF286B0E9700D369F7 /* LaunchScreenViewController.swift */; };
+		AE6D3D03286D9B2400D369F7 /* MotionActivityAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3D02286D9B2400D369F7 /* MotionActivityAssistant.swift */; };
 		AE71961D285F4C7900796A64 /* HealthBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71961C285F4C7900796A64 /* HealthBarViewModel.swift */; };
 		AE87AA612859DCC4004EB8A1 /* HealthProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87AA602859DCC4004EB8A1 /* HealthProfileModel.swift */; };
 		AE87AA632859E635004EB8A1 /* FetchHealthInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87AA622859E635004EB8A1 /* FetchHealthInfoUseCase.swift */; };
@@ -55,6 +58,9 @@
 		AE4F2F6C2852233A00118B8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AE56D5CD284F2F9B00BE4519 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		AE56D5DA285214C200BE4519 /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		AE6D3CFD286B0B7000D369F7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE6D3CFF286B0E9700D369F7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		AE6D3D02286D9B2400D369F7 /* MotionActivityAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityAssistant.swift; sourceTree = "<group>"; };
 		AE7152422848B0630014CC06 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		AE7152432848B0630014CC06 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		AE7152452848B0630014CC06 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
@@ -212,13 +218,32 @@
 			children = (
 				AEF8B35628561D38006D426C /* HealthKitSetupAssistant.swift */,
 				AEF8B35B28572AD6006D426C /* HealthDataStore.swift */,
+				AE6D3D02286D9B2400D369F7 /* MotionActivityAssistant.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		AE6D3CFB286B0B3A00D369F7 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AE6D3CFC286B0B5100D369F7 /* View */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		AE6D3CFC286B0B5100D369F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE6D3CFD286B0B7000D369F7 /* LaunchScreen.storyboard */,
+				AE6D3CFF286B0E9700D369F7 /* LaunchScreenViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AE71523E2848AB000014CC06 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AE6D3CFB286B0B3A00D369F7 /* LaunchScreen */,
 				AE56D5D22852088300BE4519 /* HealthMainScreen */,
 			);
 			path = Presentation;
@@ -372,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6D3CFE286B0B7000D369F7 /* LaunchScreen.storyboard in Resources */,
 				AEB165202852304E00A0E4AB /* Assets.xcassets in Resources */,
 				AE4F2F692852223A00118B8C /* Home.storyboard in Resources */,
 			);
@@ -431,11 +457,13 @@
 				AE56D5CE284F2F9B00BE4519 /* UIView+extension.swift in Sources */,
 				AE56D5DB285214C200BE4519 /* APIEndPoints.swift in Sources */,
 				AE87AA66285B33C5004EB8A1 /* HealthProfileViewModel.swift in Sources */,
+				AE6D3D03286D9B2400D369F7 /* MotionActivityAssistant.swift in Sources */,
 				AEF8B35728561D38006D426C /* HealthKitSetupAssistant.swift in Sources */,
 				AEF8B35C28572AD6006D426C /* HealthDataStore.swift in Sources */,
 				AE71961D285F4C7900796A64 /* HealthBarViewModel.swift in Sources */,
 				AE87AA632859E635004EB8A1 /* FetchHealthInfoUseCase.swift in Sources */,
 				AEA63095284641EB00798C90 /* SceneDelegate.swift in Sources */,
+				AE6D3D00286B0E9700D369F7 /* LaunchScreenViewController.swift in Sources */,
 				AE4F2F6D2852233A00118B8C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

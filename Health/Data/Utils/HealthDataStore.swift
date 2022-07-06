@@ -16,6 +16,13 @@ class ProfileDataStore {
         
         let now = Date()
         let startOfDay = Calendar.current.startOfDay(for: now)
+//        var component = DateComponents()
+//        component.month = 6
+//        component.hour = 1
+//        component.day = 27
+//        component.year = 2022
+        
+//        let date = Calendar.current.date(from: component)
         let predicate = HKQuery.predicateForSamples(
             withStart: startOfDay,
             end: now,

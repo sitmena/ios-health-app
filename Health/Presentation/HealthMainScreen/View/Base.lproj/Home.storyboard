@@ -129,7 +129,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpa-97-8gR">
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lpa-97-8gR">
                                                         <rect key="frame" x="30" y="-20" width="30" height="40"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icNow" translatesAutoresizingMaskIntoConstraints="NO" id="MR4-Lw-oFQ">
@@ -137,7 +137,7 @@
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNA-YW-BD2">
-                                                                <rect key="frame" x="6.6666666666666714" y="2.0000000000000009" width="17" height="12.333333333333336"/>
+                                                                <rect key="frame" x="7.6666666666666643" y="2.0000000000000009" width="17" height="12.333333333333336"/>
                                                                 <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -151,7 +151,7 @@
                                                             <constraint firstItem="MR4-Lw-oFQ" firstAttribute="top" secondItem="lpa-97-8gR" secondAttribute="top" id="6zD-Ds-HT6"/>
                                                             <constraint firstAttribute="height" constant="40" id="Ps3-Dt-ipA"/>
                                                             <constraint firstAttribute="width" constant="30" id="SIJ-RV-9TT"/>
-                                                            <constraint firstItem="fNA-YW-BD2" firstAttribute="centerX" secondItem="lpa-97-8gR" secondAttribute="centerX" id="WUR-SQ-dZf"/>
+                                                            <constraint firstItem="fNA-YW-BD2" firstAttribute="centerX" secondItem="lpa-97-8gR" secondAttribute="centerX" constant="1" id="WUR-SQ-dZf"/>
                                                             <constraint firstAttribute="bottom" secondItem="MR4-Lw-oFQ" secondAttribute="bottom" id="kwT-9U-oqX"/>
                                                         </constraints>
                                                     </view>
@@ -164,7 +164,6 @@
                                                     <constraint firstAttribute="bottom" secondItem="n3u-gI-rKS" secondAttribute="bottom" id="AkV-OB-znh"/>
                                                     <constraint firstAttribute="trailing" secondItem="n3u-gI-rKS" secondAttribute="trailing" id="HUs-aS-aDn"/>
                                                     <constraint firstItem="n3u-gI-rKS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VOa-uO-HrZ" secondAttribute="trailing" constant="8" symbolic="YES" id="I17-9g-Mj2"/>
-                                                    <constraint firstItem="lpa-97-8gR" firstAttribute="leading" secondItem="4UX-zh-PhQ" secondAttribute="trailing" constant="18" id="JD8-i4-KH0"/>
                                                     <constraint firstAttribute="bottom" secondItem="VOa-uO-HrZ" secondAttribute="bottom" id="Kxo-PG-RRW"/>
                                                     <constraint firstAttribute="trailing" secondItem="rOT-15-Spb" secondAttribute="trailing" id="Ovy-dc-e5k"/>
                                                     <constraint firstItem="rOT-15-Spb" firstAttribute="centerY" secondItem="xSp-Wn-v51" secondAttribute="centerY" id="ddR-Wp-h6F"/>

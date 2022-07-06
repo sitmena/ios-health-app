@@ -7,16 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4663ED82-7948-40DB-9093-2F668456AA1F"
-            shouldBeEnabled = "No"
+            uuid = "79EA9648-DACD-4E46-8333-646E7D55DF36"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Health/Domain/UseCases/FetchHealthInfoUseCase.swift"
+            filePath = "Health/Data/Utils/MotionActivityAssistant.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "loadEnergyBurned(_:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getMotionStatus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "79EA9648-DACD-4E46-8333-646E7D55DF36 - ba2e9e9c4d4f5209"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.CMPedometerData&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Health.MotionActivityAssistant.getMotionStatus() -&gt; ()"
+                  moduleName = "Health"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohammadsalhab/Documents/Sitech-project/HealthApp/Health/Data/Utils/MotionActivityAssistant.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "79EA9648-DACD-4E46-8333-646E7D55DF36 - ba2e9e9c4d4f5209"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.CMPedometerData&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Health.MotionActivityAssistant.getMotionStatus() -&gt; ()"
+                  moduleName = "Health"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohammadsalhab/Documents/Sitech-project/HealthApp/Health/Data/Utils/MotionActivityAssistant.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4520683-9733-4608-95B7-C7BD2751D226"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Health/Data/Utils/MotionActivityAssistant.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getMotionStatus()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
