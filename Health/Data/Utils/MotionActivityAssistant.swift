@@ -35,7 +35,6 @@ class MotionActivityAssistant {
         if CMPedometer.isStepCountingAvailable() {
             pedometer.startUpdates(from: Date()) { pedometerData, error in
                 guard let pedometerData = pedometerData, error == nil else { return }
-                
                 DispatchQueue.main.async {
                     print(pedometerData.numberOfSteps.intValue)
                 }

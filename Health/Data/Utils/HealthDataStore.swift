@@ -23,6 +23,7 @@ class ProfileDataStore {
 //        component.year = 2022
         
 //        let date = Calendar.current.date(from: component)
+        //DateComponents(
         let predicate = HKQuery.predicateForSamples(
             withStart: startOfDay,
             end: now,

@@ -15,6 +15,12 @@
 		AE6D3CFE286B0B7000D369F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6D3CFD286B0B7000D369F7 /* LaunchScreen.storyboard */; };
 		AE6D3D00286B0E9700D369F7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3CFF286B0E9700D369F7 /* LaunchScreenViewController.swift */; };
 		AE6D3D03286D9B2400D369F7 /* MotionActivityAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3D02286D9B2400D369F7 /* MotionActivityAssistant.swift */; };
+		AE6D3D072876FDC000D369F7 /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3D062876FDC000D369F7 /* UIDevice+extension.swift */; };
+		AE6D3D092883EA8B00D369F7 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3D082883EA8B00D369F7 /* UserDefaultManager.swift */; };
+		AE6D3D0B2883EBE900D369F7 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3D0A2883EBE800D369F7 /* AppConstants.swift */; };
+		AE6D3D0D28840A9A00D369F7 /* UserSubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3D0C28840A9A00D369F7 /* UserSubscriptionViewModel.swift */; };
+		AE6D3D0F2884151A00D369F7 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3D0E2884151A00D369F7 /* URLRequest+Extensions.swift */; };
+		AE6D3D1128841A9100D369F7 /* CustomerSubscribeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D3D1028841A9100D369F7 /* CustomerSubscribeModel.swift */; };
 		AE71961D285F4C7900796A64 /* HealthBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE71961C285F4C7900796A64 /* HealthBarViewModel.swift */; };
 		AE87AA612859DCC4004EB8A1 /* HealthProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87AA602859DCC4004EB8A1 /* HealthProfileModel.swift */; };
 		AE87AA632859E635004EB8A1 /* FetchHealthInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87AA622859E635004EB8A1 /* FetchHealthInfoUseCase.swift */; };
@@ -61,6 +67,12 @@
 		AE6D3CFD286B0B7000D369F7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE6D3CFF286B0E9700D369F7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		AE6D3D02286D9B2400D369F7 /* MotionActivityAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityAssistant.swift; sourceTree = "<group>"; };
+		AE6D3D062876FDC000D369F7 /* UIDevice+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
+		AE6D3D082883EA8B00D369F7 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		AE6D3D0A2883EBE800D369F7 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		AE6D3D0C28840A9A00D369F7 /* UserSubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSubscriptionViewModel.swift; sourceTree = "<group>"; };
+		AE6D3D0E2884151A00D369F7 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		AE6D3D1028841A9100D369F7 /* CustomerSubscribeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSubscribeModel.swift; sourceTree = "<group>"; };
 		AE7152422848B0630014CC06 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		AE7152432848B0630014CC06 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		AE7152452848B0630014CC06 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
@@ -175,6 +187,7 @@
 			children = (
 				AE87AA65285B33C5004EB8A1 /* HealthProfileViewModel.swift */,
 				AE71961C285F4C7900796A64 /* HealthBarViewModel.swift */,
+				AE6D3D0C28840A9A00D369F7 /* UserSubscriptionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				AE87AA602859DCC4004EB8A1 /* HealthProfileModel.swift */,
+				AE6D3D1028841A9100D369F7 /* CustomerSubscribeModel.swift */,
 			);
 			path = "Entities(Models)";
 			sourceTree = "<group>";
@@ -219,6 +233,8 @@
 				AEF8B35628561D38006D426C /* HealthKitSetupAssistant.swift */,
 				AEF8B35B28572AD6006D426C /* HealthDataStore.swift */,
 				AE6D3D02286D9B2400D369F7 /* MotionActivityAssistant.swift */,
+				AE6D3D082883EA8B00D369F7 /* UserDefaultManager.swift */,
+				AE6D3D0A2883EBE800D369F7 /* AppConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -253,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				AE56D5CD284F2F9B00BE4519 /* UIView+extension.swift */,
+				AE6D3D062876FDC000D369F7 /* UIDevice+extension.swift */,
+				AE6D3D0E2884151A00D369F7 /* URLRequest+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -453,15 +471,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA63093284641EB00798C90 /* AppDelegate.swift in Sources */,
+				AE6D3D072876FDC000D369F7 /* UIDevice+extension.swift in Sources */,
 				AE87AA612859DCC4004EB8A1 /* HealthProfileModel.swift in Sources */,
+				AE6D3D0F2884151A00D369F7 /* URLRequest+Extensions.swift in Sources */,
 				AE56D5CE284F2F9B00BE4519 /* UIView+extension.swift in Sources */,
 				AE56D5DB285214C200BE4519 /* APIEndPoints.swift in Sources */,
 				AE87AA66285B33C5004EB8A1 /* HealthProfileViewModel.swift in Sources */,
 				AE6D3D03286D9B2400D369F7 /* MotionActivityAssistant.swift in Sources */,
 				AEF8B35728561D38006D426C /* HealthKitSetupAssistant.swift in Sources */,
 				AEF8B35C28572AD6006D426C /* HealthDataStore.swift in Sources */,
+				AE6D3D092883EA8B00D369F7 /* UserDefaultManager.swift in Sources */,
 				AE71961D285F4C7900796A64 /* HealthBarViewModel.swift in Sources */,
+				AE6D3D0B2883EBE900D369F7 /* AppConstants.swift in Sources */,
 				AE87AA632859E635004EB8A1 /* FetchHealthInfoUseCase.swift in Sources */,
+				AE6D3D1128841A9100D369F7 /* CustomerSubscribeModel.swift in Sources */,
+				AE6D3D0D28840A9A00D369F7 /* UserSubscriptionViewModel.swift in Sources */,
 				AEA63095284641EB00798C90 /* SceneDelegate.swift in Sources */,
 				AE6D3D00286B0E9700D369F7 /* LaunchScreenViewController.swift in Sources */,
 				AE4F2F6D2852233A00118B8C /* HomeViewController.swift in Sources */,

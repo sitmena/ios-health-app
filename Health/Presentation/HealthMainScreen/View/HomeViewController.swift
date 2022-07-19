@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     // MARK: - ViewModels
     @LazyInjected
     private var viewModel: HealthProfileViewModel
+    private var subscribeViewModel = UserSubscriptionViewModel()
     
     /// Provides to create an instance of the CMMotionActivityManager.
     let activityManager = CMMotionActivityManager()
@@ -39,6 +40,34 @@ class HomeViewController: UIViewController {
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        FetchHealthData()
+        if UserDefaultManager.shared.isUserSubscribed() {
+            
+        } else {
+            // MARK: - Subscribe User
+            subscribeViewModel.subscribeUser { result in
+                if let result = result {
+                    
+                } else {
+                    
+                }
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        viewModel.requestHealthData()
+    }
+    
+    private func updateHealthBar(_ stepsCount: Int) {
+        currentValueLabel.text = (stepsCount % 1000).description
+        stepsProgressView.progress = Float(stepsCount % 1000) / 1000
+        currentValueView.transform = CGAffineTransform(translationX: stepsProgressView.frame.width * CGFloat(stepsProgressView.progress) - currentValueView.bounds.width / 2, y: 0)
+    }
+    
+    private func FetchHealthData() {
         viewModel.fetchHealthProfile = { [weak self] healthProfile in
             guard let `self` = self else { return }
             DispatchQueue.main.async {
@@ -61,14 +90,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        viewModel.requestHealthData()
-    }
-    
-    private func updateHealthBar(_ stepsCount: Int) {
-        currentValueLabel.text = (stepsCount % 1000).description
-        stepsProgressView.progress = Float(stepsCount % 1000) / 1000
-        currentValueView.transform = CGAffineTransform(translationX: stepsProgressView.frame.width * CGFloat(stepsProgressView.progress) - currentValueView.bounds.width / 2, y: 0)
+    private func subsribeUser() {
+        
     }
 }
