@@ -347,6 +347,7 @@
                         <outlet property="caloriesBurnedLabel" destination="eE5-as-663" id="Ke2-hM-ZkP"/>
                         <outlet property="currentValueLabel" destination="fNA-YW-BD2" id="WwP-32-VGQ"/>
                         <outlet property="currentValueView" destination="lpa-97-8gR" id="ShI-3G-BcA"/>
+                        <outlet property="redeemButton" destination="1DC-tJ-w0I" id="l1v-JM-ld2"/>
                         <outlet property="stepsCountLabel" destination="g09-vi-9xe" id="hoN-4B-Gfs"/>
                         <outlet property="stepsProgressView" destination="rOT-15-Spb" id="y91-xp-gWQ"/>
                         <outlet property="totalPointsBalanceLabel" destination="XYe-hW-LBJ" id="oi5-HE-mSE"/>

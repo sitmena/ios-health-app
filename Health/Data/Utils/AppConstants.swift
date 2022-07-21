@@ -18,6 +18,11 @@ class AppConstants {
         static var baseURL = "https://60618e8fac47190017a7114e.mockapi.io/api/v1/"
         struct EndPoints {
             static var customerSubscribe = "CustomerSubscribe"
+            static var redeemPoints = "redeemPoints"
         }
+    }
+    
+    struct storyboards {
+        static var home = "Home"
     }
 }

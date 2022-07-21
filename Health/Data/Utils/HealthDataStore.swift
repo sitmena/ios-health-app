@@ -14,8 +14,8 @@ class ProfileDataStore {
         let healthStore = HKHealthStore()
         let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
         
-        let now = Date()
-        let startOfDay = Calendar.current.startOfDay(for: now)
+        //let now = Date()
+        
 //        var component = DateComponents()
 //        component.month = 6
 //        component.hour = 1
@@ -24,6 +24,10 @@ class ProfileDataStore {
         
 //        let date = Calendar.current.date(from: component)
         //DateComponents(
+        
+        // MARK: - replace "NSDate().timeIntervalSince1970" to unix time stamp
+        let now = Date(timeIntervalSince1970: NSDate().timeIntervalSince1970)
+        let startOfDay = Calendar.current.startOfDay(for: now)
         let predicate = HKQuery.predicateForSamples(
             withStart: startOfDay,
             end: now,
@@ -46,6 +50,8 @@ class ProfileDataStore {
         healthStore.execute(query)
     }
     
+    // MARK: - todo - create another method to fetch steps from specific time
+
     class func getEnergyBurned(completion: @escaping (Double) -> Void) {
         let healthStore = HKHealthStore()
         let energyQuantityType = HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!

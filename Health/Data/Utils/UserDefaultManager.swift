@@ -25,6 +25,11 @@ final class UserDefaultManager: NSObject {
         userDefaults.set(newUUID, forKey: AppConstants.UserDefaults.deviceUUID)
     }
     
+    // MARK: - todo use this method to remove any previous UUID
+    func removeUUID() {
+        userDefaults.removeObject(forKey: AppConstants.UserDefaults.deviceUUID)
+    }
+    
     func isUserSubscribed() -> Bool {
         return userDefaults.bool(forKey: AppConstants.UserDefaults.isUserSubscribed)
     }

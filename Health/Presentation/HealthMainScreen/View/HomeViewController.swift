@@ -9,8 +9,12 @@
 import UIKit
 import Resolver
 import CoreMotion
+import RxSwift
+import RxCocoa
 
 class HomeViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
     
     // MARK: - ViewModels
     @LazyInjected
@@ -34,16 +38,35 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var totalPointsBalanceLabel: UILabel!
     @IBOutlet weak var currentValueView: UIView!
     @IBOutlet weak var currentValueLabel: UILabel!
+    @IBOutlet weak var redeemButton: UIButton!
     @IBOutlet weak var stepsProgressView: UIProgressView!
     
     
     // MARK: - View Lifecycle
+    fileprivate func healthKitPermission() {
+        HealthKitSetupAssistant.authorizeHealthKit { (authorized, error) in
+            guard authorized else {
+                let baseMessage = "HealthKit Authorization Failed"
+                if let error = error {
+                    print("\(baseMessage). Reason: \(error.localizedDescription)")
+                } else {
+                    print(baseMessage)
+                }
+                return
+            }
+            print("HealthKit Successfully Authorized.")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // moved from appdelegate to here
+        healthKitPermission()
+        
         FetchHealthData()
         if UserDefaultManager.shared.isUserSubscribed() {
-            
+            // MARK: -
         } else {
             // MARK: - Subscribe User
             subscribeViewModel.subscribeUser { result in
@@ -52,6 +75,23 @@ class HomeViewController: UIViewController {
                 } else {
                     
                 }
+            }
+        }
+        
+        redeemButton.rx.tap.bind {
+            let url = URL(string: AppConstants.URLs.baseURL + AppConstants.URLs.EndPoints.redeemPoints)
+            var resource = Resource<CustomerSubscribeModel>(url: url!)
+            resource.httpMethod = .post
+            let redeemModel = CustomerSubscribeModel(deviceID: UIDevice.getDeviceUUID(), deviceType: "iOS", deviceName: "iPhone")
+            do {
+                let data = try JSONEncoder().encode(redeemModel)
+                resource.body = data
+                URLRequest.load(resource: resource)
+                    .subscribe(onNext: { response in
+                        print(response)
+                    }).disposed(by: self.disposeBag)
+            } catch let err {
+                print(err)
             }
         }
     }
@@ -71,6 +111,7 @@ class HomeViewController: UIViewController {
         viewModel.fetchHealthProfile = { [weak self] healthProfile in
             guard let `self` = self else { return }
             DispatchQueue.main.async {
+                // MARK: - todo make sure to sync data with server if noOfSteps is changed and within the interval retrieved from the configs.
                 self.noOfSteps = healthProfile.stepsCount ?? 0
                 self.caloriesBurnedLabel.text = healthProfile.energyBurned?.description
             }
@@ -90,7 +131,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    private func subsribeUser() {
+    private func redeemPoints() {
         
     }
 }
